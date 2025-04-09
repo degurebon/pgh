@@ -10,6 +10,13 @@
     <nav class="bg-black text-xs uppercase text-green-500 text-center flex items-center justify-center space-x-4">
         {{ nav:collection:pages include_home="true" }}
             <a href="{{ url }}" class="p-2 block hover:text-yellow-200">{{ title }}</a>
+            {{ if children }}
+            <ul class="dropdown-menu">
+            {{ children }}
+                <li><a href="{{ url }}"{{ if is_current }} class="current-child"{{ endif }}>{{ title }}</a></li>
+            {{ /children }}
+            </ul>
+        {{ endif }}
         {{ /nav:collection:pages  }}
     </nav>
     
