@@ -1,8 +1,8 @@
-title: Blog
+title: Artikels
 template: blog/show
 layout: layout
 revisions: false
-route: '/blog/{year}/{slug}'
+route: '/artikel/{year}/{slug}'
 date: true
 sort_dir: asc
 date_behavior:
