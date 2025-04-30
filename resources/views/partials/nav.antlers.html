@@ -1,19 +1,30 @@
-<nav class="bg-black text-xs uppercase text-green-500 text-center flex items-center justify-center space-x-4">
-    {{ nav:mainnav }}
-        <div class="relative group">
-            <a href="{{ url }}" class="p-2 block hover:text-yellow-200">{{ title }}</a>
+<nav class="bg-orange-50 drop-shadow-sm text-xs uppercase text-black px-4 py-2 flex items-center justify-between">
+    <!-- Left: Logo -->
+     <a href="/"
+    <div class="flex items-center space-x-2 h-20 w-40">
+        {{ svg src="/assets/static/logo_protestantse_kerk_rgb.svg" class="fill-current" }}
+        
+    </div>
+    </a>
 
-            {{ if children }}
-            <ul class="absolute hidden group-hover:block bg-black text-left mt-1 space-y-1 p-2 z-10">
-                {{ children }}
-                    <li>
-                        <a href="{{ url }}"{{ if is_current }} class="current-child"{{ endif }} class="block px-2 py-1 hover:text-yellow-200">
-                            {{ title }}
-                        </a>
-                    </li>
-                {{ /children }}
-            </ul>
-            {{ endif }}
-        </div>
-    {{ /nav:mainnav }}
+    <!-- Right: Nav Links -->
+    <div class="flex items-center space-x-4 text-center">
+        {{ nav:mainnav }}
+            <div class="relative group">
+                <a href="{{ url }}" class="p-2 block hover:text-orange-400 transition duration-200">{{ title }}</a>
+
+                {{ if children }}
+                <ul class="absolute hidden group-hover:block bg-orange-100 text-left space-y-1 p-2 z-10">
+                    {{ children }}
+                        <li>
+                            <a href="{{ url }}" class="block px-2 py-1 hover:text-orange-400 {{ if is_current }}current-child{{ endif }}">
+                                {{ title }}
+                            </a>
+                        </li>
+                    {{ /children }}
+                </ul>
+                {{ endif }}
+            </div>
+        {{ /nav:mainnav }}
+    </div>
 </nav>

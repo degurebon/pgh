@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/site.css">
 </head>
-<body class="bg-gray-900 text-white text-lg font-mono">
-    <header class="max-w-7xl mx-auto">
+<body class="bg-orange-50 text-black text-lg font-mono">
+    <header>
         {{ partial:nav }}
     </header>
     
-    
-    <div class="container max-w-lg mx-auto py-8">
-        {{ template_content }}
+    <div id="page-container">
+        <div class="container max-w-lg mx-auto py-8">
+            {{ template_content }}
+        </div>
     </div>
+
+    <footer>
+        {{ partial:footer }}
+    </footer>
 </body>
 </html>
