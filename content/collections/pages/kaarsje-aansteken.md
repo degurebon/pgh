@@ -4,5 +4,7 @@ blueprint: page
 title: 'Kaarsje aansteken'
 author: 47e120c0-c653-4bfd-a81f-bc32cec57707
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1744278000
+updated_at: 1746533677
+template: pages/kaarsje
 ---
+Hier kun je een kaarjse aansteken en een bericht achter laten

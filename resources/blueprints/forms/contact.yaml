@@ -1,0 +1,30 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              display: Naam
+              type: text
+              validate:
+                - required
+          -
+            handle: e_mail
+            field:
+              input_type: email
+              type: text
+              display: e-Mail
+              listable: true
+              validate:
+                - required
+                - email
+          -
+            handle: subject
+            field:
+              display: Onderwerp
+              type: textarea
+              validate:
+                - required

@@ -2,8 +2,6 @@ tree:
   -
     entry: home
   -
-    entry: 1b12da82-ce63-4e4a-946c-f68124e357ff
-  -
     entry: 7a2e1b19-973a-4e53-98f1-916830f5257c
     children:
       -
@@ -18,15 +16,20 @@ tree:
         entry: dbfee21d-c636-4bf1-84c9-3a8d35a1a412
   -
     entry: 01e63509-4e02-4029-83e4-88afe8414fb4
+    children:
+      -
+        entry: 01db9e7a-bedf-4a4a-8ae4-c947ac631440
+      -
+        entry: 50b44bdb-a089-4f6d-9e07-0f146b9294c8
+      -
+        entry: 527ebcbb-ea7e-414a-8c03-7b7a9b97926e
+      -
+        entry: 78eefed5-afa1-4a58-85c5-a5c7d49f5fe9
+      -
+        entry: d79c2dc3-0d51-40e2-b137-86638be8af91
+      -
+        entry: 6533d7cc-b181-44ce-82f8-d78cef0cb015
   -
-    entry: 01db9e7a-bedf-4a4a-8ae4-c947ac631440
+    entry: 1b12da82-ce63-4e4a-946c-f68124e357ff
   -
-    entry: 50b44bdb-a089-4f6d-9e07-0f146b9294c8
-  -
-    entry: 527ebcbb-ea7e-414a-8c03-7b7a9b97926e
-  -
-    entry: 78eefed5-afa1-4a58-85c5-a5c7d49f5fe9
-  -
-    entry: d79c2dc3-0d51-40e2-b137-86638be8af91
-  -
-    entry: 6533d7cc-b181-44ce-82f8-d78cef0cb015
+    entry: 6cb486de-562c-4b14-a319-f89e9a8a3310
