@@ -6,6 +6,11 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+      columns:
+        - title
+        - slug
+        - status
+        - template
   forms:
     kaarsje:
       columns:

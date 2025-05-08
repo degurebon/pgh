@@ -1,0 +1,90 @@
+title: '2 Assets'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: markdown_field_1
+            field:
+              type: markdown
+              display: 'Markdown Field 1'
+              width: 50
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - code
+              automatic_line_breaks: false
+          -
+            handle: assets_field_1
+            field:
+              container: assets
+              type: assets
+              display: 'Assets Field 1'
+              width: 50
+              max_files: 1
+          -
+            handle: assets_field_2
+            field:
+              container: assets
+              type: assets
+              display: 'Assets Field 2'
+              width: 50
+              max_files: 1
+          -
+            handle: markdown_field_2
+            field:
+              type: markdown
+              display: 'Markdown Field 2'
+              width: 50
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - code
+              automatic_line_breaks: false
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
