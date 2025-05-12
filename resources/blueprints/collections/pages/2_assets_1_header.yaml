@@ -1,3 +1,4 @@
+order: 2
 title: '2 Assets 1 Header'
 tabs:
   main:
@@ -83,6 +84,7 @@ tabs:
             field:
               type: template
               display: 'Template Field'
+              folder: pages
   sidebar:
     display: Sidebar
     sections:

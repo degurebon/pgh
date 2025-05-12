@@ -8,10 +8,8 @@ markdown_field_1: |-
 markdown_field_2: |-
   Jezus	
   Jezus Christus roept ons op om Zijn liefde te beantwoorden, geleid door de Heilige Geest. Als Protestantse Gemeente Heerenveen streven we ernaar een diverse gemeenschap van gelovigen en zoekenden te zijn, sterk met elkaar verbonden in geloof en in liefde. We willen samen groeien en God dienen in alles wat we doen.
-assets_field_1:
-  - yagl-ofdom8-1536x1024.jpg
-assets_field_2:
-  - groot-dsc_2585.jpg
+assets_field_1: yagl-ofdom8-1536x1024.jpg
+assets_field_2: groot-dsc_2585.jpg
 markdown_field_3: |-
   Waarom we samenkomen	
 
@@ -23,7 +21,7 @@ markdown_field_3: |-
       Betrokken: Vanuit Gods liefde voor ons, willen wij betrokken zijn op elkaar en de wereld, zoals de uitgestoken hand in ons logo verbeeldt. We hebben oprechte interesse in en aandacht voor elkaar. 
       Bevlogen: We zijn een gemeenschap van de Drie-enige en wij willen vanuit bezieling en gedrevenheid bevlogen zijn. We hebben werkelijk oog voor ontwikkeling, leren en groei.
       Dienstbaar: Zoals in ons logo de zon wordt verbeeld die ons links en rechts, voor en achter, van begin tot eind omgeeft en beschijnt, worden we door Jezus in beweging gezet, om dienstbaar te zijn en licht en warmte te verspreiden.
-template_field: 2_assets_1_header
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1746706565
+updated_at: 1747054929
+template_field: pages/2_assets_1_header
 ---

@@ -1,10 +1,10 @@
 <section class="border border-black mt-12">
     {{ slot }}
-    {{ collection:blog :limit="limit" }}
+    {{ collection:articles :limit="limit" }}
     
         <a href="{{ url }}" class="flex items-center justify-between p-5 border-t border-black text-black hover:text-orange-300 hover:bg-orange-150">
             <span>{{ title }}</span>
             <span class="text-orange-900 text-sm">{{ date }}</span>
         </a>
-    {{ /collection:blog }}
+    {{ /collection:articles }}
 </section>

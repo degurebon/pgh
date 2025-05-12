@@ -1,5 +1,5 @@
 title: Articles
-template: blog/show
+template: articles/show
 layout: layout
 revisions: false
 route: '/artikel/{year}/{slug}'

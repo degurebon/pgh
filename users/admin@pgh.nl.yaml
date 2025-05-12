@@ -11,6 +11,13 @@ preferences:
         - slug
         - status
         - template
+    agenda:
+      columns:
+        - title
+        - slug
+        - date
+        - status
+        - date_field
   forms:
     kaarsje:
       columns:

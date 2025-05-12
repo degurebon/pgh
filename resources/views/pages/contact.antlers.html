@@ -1,38 +1,38 @@
-{{ content }}
+<div class="container min-h-dvh max-w-sm md:max-w-xl mx-auto py-8">
+    {{ content }}
 
-{{ form:contact }}
- 
-    {{ if success }}
-        <div class="bg-green-300 text-white p-2">
-            {{ success }}
-        </div>
-    {{ else }}
+    {{ form:contact }}
     
-    {{ if errors }}
-        <div class="bg-red-300 text-white p-2">
-            {{ errors }}
-                {{ value }}<br>
-            {{ /errors }}
-        </div>
-    {{ /if }}
- 
-    {{ fields }}
-    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <label class="block text-sm/6 font-semibold text-gray-900">{{ display }}</label>
-            <div class="mt-2.5">
-                <div class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">{{ field }}</div>
+        {{ if success }}
+            <div class="bg-green-300 text-white p-2">
+                {{ success }}
             </div>
-            {{ if error }}
-                <p class="text-gray-500">{{ error }}</p>
-            {{ /if }}
-        </div>
-    {{ /fields }}
- 
-    <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+        {{ else }}
+        
+        {{ if errors }}
+            <div class="bg-red-300 text-white p-2">
+                {{ errors }}
+                    {{ value }}<br>
+                {{ /errors }}
+            </div>
+        {{ /if }}
+    
+        {{ fields }}
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                <label class="block text-sm/6 font-semibold text-gray-900">{{ display }}</label>
+                <div class="mt-2.5">
+                    <div class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">{{ field }}</div>
+                </div>
+                {{ if error }}
+                    <p class="text-gray-500">{{ error }}</p>
+                {{ /if }}
+            </div>
+        {{ /fields }}
+    
+        <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
 
-    <button type="submit">Submit</button>
-    {{ /if }}
- 
-{{ /form:contact }}
-
-
+        <button type="submit">Submit</button>
+        {{ /if }}
+    
+    {{ /form:contact }}
+</div>
