@@ -18,6 +18,13 @@ preferences:
         - date
         - status
         - date_field
+    kerkdiensten:
+      columns:
+        - title
+        - slug
+        - status
+        - date
+        - locaties
   forms:
     kaarsje:
       columns:

@@ -1,13 +1,15 @@
 title: Kerkdiensten
 template: kerkdiensten/show
 layout: layout
+taxonomies:
+  - locaties
 revisions: false
-route: '/kerkdiensten/{year}/{slug}'
+route: '/kerkdiensten/{year}-{month}-{day}/{slug}'
 date: true
 sort_dir: asc
 date_behavior:
-  past: public
-  future: private
+  past: unlisted
+  future: public
 preview_targets:
   -
     label: Entry

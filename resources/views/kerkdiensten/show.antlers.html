@@ -1,14 +1,23 @@
 <div class="container min-h-dvh max-w-sm md:max-w-xl xl:max-w-4xl mx-auto py-8">
 
     <h1 class="text-3xl bg-orange-400 text-center text-black font-bold mt-6 p-6">{{ title }}</h1>
-    <div class="border text-center text-black border-orange-400 mt-8 p-3 text-xs uppercase">
-        Published on {{ date }} by {{ author:name }}
+
+
+    <div class="flex mb-4 mt-8">
+        {{ locaties }}
+            <div class="w-1/3">
+                <h1> {{ locatie }}</h1>
+
+                <img src="{{ locatie_asset }}" class="border mt-8 mx-auto border-orange-400 p-1" alt="{{ locatie_asset:alt }}" />
+            </div>
+        {{ /locaties }}
     </div>
 
-    <img src="{{ featured_image }}" class="border mt-8 mx-auto border-orange-400 p-1" alt="{{ featured_image:alt }}" />
+    <div class="border text-center text-black border-orange-400 mt-8 p-3 text-xs uppercase">
+        {{ date }}
+        {{ time_field }}
+    </div>
 
-    <article class="space-y-4 mt-8 text-sm text-black leading-loose">
-        {{ content }}
-    </article>
+        <p>{{ content }}</p>
 
 </div>

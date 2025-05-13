@@ -1,0 +1,19 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: bard_field_1
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard Field 1'
+          -
+            handle: assets_field_1
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Assets Field 1'

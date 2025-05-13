@@ -1,0 +1,39 @@
+title: Locaties
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: locatie
+            field:
+              type: text
+              validate:
+                - required
+              display: Locatie
+          -
+            handle: locatie_asset
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Locatie asset'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              required: true
+              validate:
+                - required
+                - 'max:200'

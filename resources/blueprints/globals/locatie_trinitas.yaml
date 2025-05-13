@@ -1,0 +1,12 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: bard_field_1
+            field: locatie.bard_field_1
+          -
+            handle: assets_field_1
+            field: locatie.assets_field_1
