@@ -22,9 +22,7 @@ tabs:
                 - required
                 - email
           -
-            handle: subject
+            handle: note
             field:
-              display: Onderwerp
               type: textarea
-              validate:
-                - required
+              display: Bericht

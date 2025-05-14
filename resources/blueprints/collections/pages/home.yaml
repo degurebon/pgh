@@ -1,0 +1,65 @@
+title: home
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: bard_field_1
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard Field 1'
+          -
+            handle: assets_field_1
+            field:
+              max_files: 4
+              container: assets
+              type: assets
+              display: 'Assets Field 1'
+      -
+        fields:
+          -
+            handle: entries_field_1
+            field:
+              type: entries
+              display: Artikelen
+              max_items: 3
+              collections:
+                - articles
+                - pages
+                - agenda
+          -
+            handle: collections_field_1
+            field:
+              max_items: 5
+              type: collections
+              display: 'Collections Field 1'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

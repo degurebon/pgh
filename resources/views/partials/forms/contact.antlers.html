@@ -1,0 +1,38 @@
+{{ if success }}
+    <div class="bg-green-300 text-white p-2">{{ success }}</div>
+{{ else }}
+
+{{ if errors }}
+    <div class="bg-red-300 text-white p-2">{{ errors }}
+        {{ value }}<br>{{ /errors }}
+    </div>
+{{ /if }}
+
+<section class="bg-orange-50">
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center ">Contact</h2>
+      <p class="mb-8 lg:mb-16 font-light text-center sm:text-xl">Uw vragen komen binnen bij het kerkelijk bureau. Die bepalen de route van uw vraag.</p>
+      {{ form:contact }}
+      <div class="space-y-8">
+            <div>
+                <label for="subject" class="block mb-2 text-sm font-medium ">Naam</label>
+                <input type="text" name="name" value="{{ old:name }}" class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+            </div>
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium">e-mail</label>
+                <input type="email" name="e_mail" value="{{ old:name }}" class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+            </div>
+            <div class="sm:col-span-2">
+                <label for="note" class="block mb-2 text-sm font-medium ">Jouw bericht</label>
+                <textarea name="note" rows="6" class="block p-2.5 w-full text-sm rounded-lg border shadow-sm" placeholder="Bericht">{{ old:note }}</textarea>
+             </div>
+            <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+          <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg border shadow-sm sm:w-fit bg-white hover:bg-green-200 ">Versturen</button>
+      {{ /form:contact }}
+  </div>
+</section>
+
+{{ /if }}
+
+
+
