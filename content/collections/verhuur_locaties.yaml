@@ -1,0 +1,14 @@
+title: 'Verhuur Locaties'
+template: verhuur_locaties/index
+layout: layout
+revisions: false
+date: true
+sort_dir: asc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: true
+  slugs: true

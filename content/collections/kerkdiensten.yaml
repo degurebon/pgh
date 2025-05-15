@@ -6,10 +6,7 @@ taxonomies:
 revisions: false
 route: '/kerkdiensten/{year}-{month}-{day}/{slug}'
 date: true
-sort_dir: asc
-date_behavior:
-  past: unlisted
-  future: public
+sort_dir: desc
 preview_targets:
   -
     label: Entry

@@ -1,0 +1,5 @@
+title: 'Verhuur Locaties'
+tabs:
+  main:
+    display: Main
+    fields: {  }

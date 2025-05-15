@@ -44,9 +44,7 @@ tabs:
             field:
               type: slug
               localizable: true
-              validate:
-                - 'max:200'
-              show_regenerate: true
+              validate: 'max:200'
           -
             handle: date
             field:
