@@ -38,3 +38,4 @@ preferences:
         - e_mail
   locale: en
   favorites: {  }
+  start_page: collections

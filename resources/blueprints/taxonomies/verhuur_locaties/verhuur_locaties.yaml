@@ -1,0 +1,71 @@
+title: Verhuur_locaties
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: replicator_field
+            field:
+              type: replicator
+              display: 'Replicator Field'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Titel
+                        -
+                          handle: bard_field
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: Text
+                            buttons:
+                              - h1
+                              - h2
+                              - h3
+                              - h4
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - removeformat
+                              - quote
+                              - anchor
+                              - image
+                              - table
+                              - small
+                              - alignleft
+                              - aligncenter
+                              - alignright
+                              - alignjustify
+                            container: assets
+                            save_html: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              required: true
+              validate:
+                - required
+                - 'max:200'

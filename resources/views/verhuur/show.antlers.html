@@ -1,0 +1,25 @@
+<div class="container min-h-dvh md:max-w-8xl mx-auto py-8">
+
+    <h1 class="text-3xl bg-orange-400 text-center text-black font-bold mt-6 p-6">{{ title }}</h1>
+
+
+  {{ taxonomy_terms_field }}
+
+
+    <div class="flex mb-4 mt-8">
+            {{ replicator_field }}
+            <div class="w-1/4 mx-1">
+                {{ title }}
+                {{ bard_field }}
+                
+            </div>
+        {{ /replicator_field }}
+    </div>
+
+
+  {{ /taxonomy_terms_field }}
+
+
+        <p>{{ content }}</p>
+
+</div>

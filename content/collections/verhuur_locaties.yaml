@@ -1,7 +1,9 @@
 title: 'Verhuur Locaties'
-template: verhuur_locaties/index
+template: verhuur/show
 layout: layout
+mount: 6533d7cc-b181-44ce-82f8-d78cef0cb015
 revisions: false
+route: '/locatie-en-zaal-verhuur/{slug}'
 date: true
 sort_dir: asc
 preview_targets:
@@ -10,5 +12,5 @@ preview_targets:
     url: '{permalink}'
     refresh: true
 structure:
-  root: true
+  root: false
   slugs: true

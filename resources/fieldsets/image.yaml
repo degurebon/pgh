@@ -1,0 +1,11 @@
+title: 'Verhuur Image'
+fields:
+  -
+    handle: assets_field
+    field:
+      max_files: 1
+      container: assets
+      folder: locaties
+      dynamic: slug
+      type: assets
+      display: 'Assets Field'

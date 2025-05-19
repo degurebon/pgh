@@ -1,0 +1,17 @@
+title: Trinitas
+replicator_field:
+  -
+    id: mav1vush
+    bard_field: '<p>Deze ruime zaal heeft vele mogelijkheden. In theateropstelling vinden hier met gemak 120 mensen een zitplaats, maar vanzelfsprekend zijn ook andere opstellingen mogelijk. Het maakt deze zaal dan ook uitermate geschikt voor vergaderingen, kleine congressen, lezingen en cursussen. Ook recepties en andere informele bijeenkomsten kunnen hier gehouden worden, mede door de aanwezigheid van statafels. Omdat de zaal beschikt over een prima akoestiek, een piano en een orgel, vinden koren en muziekgroepen dit een prettige oefenruimte. Ook is het een sfeervolle ruimte voor uitvaarten.</p><p><strong>Faciliteiten</strong></p><ul><li><p>Openbare wifi</p></li><li><p>Beamer</p></li><li><p>Geluidsinstallatie</p></li><li><p>Piano en orgel</p></li><li><p>Flip-over (optioneel)</p></li></ul><p><strong>Prijzen</strong></p><p>Huurtarief dagdeel € 230,00<br>Huurtarief dag € 375,00</p><p><img src="statamic://asset::assets::locaties/trinitas/triade-scaled-e1733995014743-1024x508.jpg"></p>'
+    type: new_set
+    enabled: true
+    title: Triade
+  -
+    id: mav27jyf
+    title: 'Grote zaal / concertzaal'
+    bard_field: '<p>De grote zaal, die aan 750 mensen een gerieflijke zitplaats kan bieden, is de trots van Trinitas! Deze zaal is uitermate geschikt voor concerten, gala’s, congressen, bedrijfsbijeenkomsten, maar ook voor een huwelijksplechtigheid of uitvaart biedt de zaal voldoende mogelijkheden. De zaal staat standaard in theateropstelling, maar andere opstellingen zijn ook mogelijk. Op het grote, verhoogde podium zijn sprekers en artiesten uitstekend zichtbaar. Wij beschikken over podiumelementen waarmee een koor nog beter zichtbaar is voor het publiek. Het podium is bereikbaar met een lift. Niet alleen de akoestiek is uitzonderlijk, maar ook de professionele geluidsapparatuur. De vele microfoons (waarvan een aantal draadloos) bieden talloze mogelijkheden voor bijvoorbeeld sprekers en koren. Ook muziekinstrumenten kunnen moeiteloos ingeplugd worden. Er is krachtstroom (max. 64 Amp.) voor handen. Daarnaast heeft u de beschikking over een professionele beamer die zowel bediend kan worden vanaf het podium als vanuit de regiekamer. In de zaal zijn meerdere camera’s aanwezig, hiermee kunnen wij opnames van uw evenement maken. Trinitas biedt zo nodig professionele ondersteuning bij het gebruik van audiovisuele middelen.</p><p><strong>Faciliteiten</strong></p><ul><li><p>Openbare wifi</p></li><li><p>Beamer</p></li><li><p>Geluidsinstallatie</p></li><li><p>Dimbare verlichting</p></li><li><p>Sfeerverlichting, instelbaar in alle kleuren</p></li><li><p>Vleugel en orgel</p></li><li><p>Uitbouw podium mogelijk (door derden)</p></li><li><p>Opname en uitzending evenement (optioneel)</p></li></ul><p><strong>Prijzen</strong></p><p><em>Heeft u interesse in deze zaal, neem dan voor een offerte op maat contact op met Trinitas Zaalverhuur Heerenveen.</em></p><p><img src="statamic://asset::assets::locaties/trinitas/grote-zaal-concertzaal.jpg"></p>'
+    type: new_set
+    enabled: true
+updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
+updated_at: 1747657746
+blueprint: verhuur_locaties

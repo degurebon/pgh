@@ -1,0 +1,11 @@
+title: Sionskerk
+replicator_field:
+  -
+    id: mav21epf
+    title: Cafetaria
+    bard_field: '<p><img src="statamic://asset::assets::locaties/sionskerk/sionskerk-hal.png" alt="Cafetaria"></p>'
+    type: new_set
+    enabled: true
+updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
+updated_at: 1747657338
+blueprint: verhuur_locaties
