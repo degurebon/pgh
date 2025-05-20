@@ -1,0 +1,98 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              display: Naam
+              type: text
+              validate:
+                - required
+              width: 50
+          -
+            handle: last_name
+            field:
+              type: text
+              display: Achternaam
+              width: 50
+          -
+            handle: e_mail
+            field:
+              input_type: email
+              type: text
+              display: e-Mail
+              listable: true
+              validate:
+                - required
+                - email
+          -
+            handle: company
+            field:
+              type: text
+              display: Bedrijfsnaam
+          -
+            handle: phone
+            field:
+              type: integer
+              display: Telefoon
+              validate:
+                - 'digits_between:10,12'
+          -
+            handle: location
+            field:
+              options:
+                -
+                  key: 1
+                  value: Trinitas
+                -
+                  key: 2
+                  value: Sionskerk
+              type: select
+              display: Locatie
+          -
+            handle: trintias_room
+            field:
+              options:
+                -
+                  key: 1
+                  value: 'Zaal 1'
+                -
+                  key: 2
+                  value: 'Zaal 2'
+                -
+                  key: 3
+                  value: 'Zaal 3'
+                -
+                  key: 4
+                  value: 'Zaal 4'
+              type: select
+              display: 'Zalen trinitas'
+          -
+            handle: sionskerk_room
+            field:
+              options:
+                -
+                  key: 1
+                  value: 'Zaal 1'
+              type: select
+              display: 'Zalen sionskerk'
+          -
+            handle: aantal
+            field:
+              type: integer
+              display: 'Aantal personen'
+          -
+            handle: informatie
+            field:
+              type: textarea
+              display: Informatie
+              validate:
+                - required
+          -
+            handle: wensen
+            field:
+              type: textarea
+              display: 'Aanvullende wensen'
