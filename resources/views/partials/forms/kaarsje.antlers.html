@@ -1,0 +1,26 @@
+{{ form:kaarsje }}
+
+    <div class="max-w-sm md:max-w-xl mx-auto">
+
+    <section class="bg-orange-50">
+    <div class="py-4 lg:py-8 px-4">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center ">Kaarsje aansteken</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center sm:text-xl">Op deze pagina kun je een digitaal kaarsje aansteken met een gebed erbij.</p>
+        {{ form:kaarsje }}
+        <div class="space-y-8">
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium ">Naam bij de kaars</label>
+                    <input type="text" name="name" value="{{ old:name }}" class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="prayer" class="block mb-2 text-sm font-medium ">Wens of gebed</label>
+                    <textarea name="prayer" rows="6" class="block p-2.5 w-full text-sm rounded-lg border shadow-sm" placeholder="Gebed">{{ old:prayer }}</textarea>
+                </div>
+                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg border shadow-sm sm:w-fit bg-white hover:bg-green-200 ">Versturen</button>
+    </div>
+    </section>
+
+    </div>
+
+{{ /form:kaarsje }}
