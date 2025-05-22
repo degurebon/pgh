@@ -2,9 +2,7 @@
 
     <h1 class="text-3xl bg-orange-400 text-center text-black font-bold mt-6 p-6">{{ title }}</h1>
 
-
-  {{ taxonomy_terms_field }}
-
+    {{ taxonomy_terms_field }}
 
     <div class="flex mb-4 mt-8">
             {{ replicator_field }}
@@ -16,42 +14,66 @@
         {{ /replicator_field }}
     </div>
 
+    {{ /taxonomy_terms_field }}
 
-  {{ /taxonomy_terms_field }}
+    <p>{{ content }}</p>
 
+    <section class="bg-orange-50">
+        <div class="py-4 lg:py-8 px-4">
+            {{ form:verhuur }}
+            <div class="space-y-8">
+                {{ fields }}
 
-        <p>{{ content }}</p>
+                {{ if type == "text"}}
+                        <div>
+                            <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
+                            <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                            {{ if error }}
+                                <p class="text-red-700">{{ error }}</p>
+                            {{ /if }}
+                        </div>
+                {{ /if }}
 
+                {{ if type == "integer"}}
+                        <div>
+                            <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
+                            <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                            {{ if error }}
+                                <p class="text-red-700">{{ error }}</p>
+                            {{ /if }}
+                        </div>
+                {{ /if }}
 
- <section class="bg-orange-50">
-  <div class="py-4 lg:py-8 px-4">
-      {{ form:verhuur }}
-      <div class="space-y-8">
-            <div>
-                <label for="subject" class="block mb-2 text-sm font-medium ">Naam</label>
-                <input type="text" name="name" value="{{ old:name }}" class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+                {{ if type == "select"}}
+                        <div>
+                            <label class="block mb-2 text-sm font-medium ">{{ display }}</label>
+
+                            <select name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+                                <option value={{ field }}</option>
+                            </select>
+                            {{ if error }}
+                                <p class="text-red-700">{{ error }}</p>
+                            {{ /if }}
+                        </div>
+                {{ /if }}
+
+                {{ if type == "textarea"}}
+                        <div>
+                            <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
+                            <input name={{ handle }} class="block p-2.5 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                            {{ if error }}
+                                <p class="text-red-700">{{ error }}</p>
+                            {{ /if }}
+                        </div>
+                {{ /if }}
+
+                {{ /fields }}
+
+                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg border shadow-sm sm:w-fit bg-white hover:bg-green-200 ">Versturen</button>
             </div>
-            <div>
-                <label for="last_name" class="block mb-2 text-sm font-medium">last_name</label>
-                <input type="text" name="e_mail" value="{{ old:last_name }}" class="block p-3 w-full text-sm rounded-lg border shadow-sm">
-            </div>
-            <div class="sm:col-span-2">
-                <label for="note" class="block mb-2 text-sm font-medium ">Jouw bericht</label>
-                <textarea name="note" rows="6" class="block p-2.5 w-full text-sm rounded-lg border shadow-sm" placeholder="Bericht">{{ old:note }}</textarea>
-             </div>
-            <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-          <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg border shadow-sm sm:w-fit bg-white hover:bg-green-200 ">Versturen</button>
-      {{ /form:verhuur }}
-  </div>
-</section>
-
-
-
-
-
-
-
-
-  
+            {{ /form:verhuur }}
+        </div>
+    </section>
 
 </div>

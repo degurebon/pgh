@@ -26,7 +26,6 @@ tabs:
               display: e-Mail
               listable: true
               validate:
-                - required
                 - email
           -
             handle: company
@@ -34,51 +33,42 @@ tabs:
               type: text
               display: Bedrijfsnaam
           -
-            handle: phone
+            handle: tel
             field:
-              type: integer
+              input_type: tel
+              type: text
               display: Telefoon
-              validate:
-                - 'digits_between:10,12'
           -
             handle: location
             field:
               options:
                 -
-                  key: 1
-                  value: Trinitas
+                  key: 'Trinitas Luxe vergaderruimte'
+                  value: 'Trinitas - Luxe vergaderruimte'
                 -
-                  key: 2
-                  value: Sionskerk
+                  key: 'Trinitas Multifunctionele zalen'
+                  value: 'Trinitas - Multifunctionele zalen'
+                -
+                  key: 'Trinitas Variabele zaal'
+                  value: 'Trinitas - Variabele zaal'
+                -
+                  key: 'Trinitas Triade'
+                  value: 'Trinitas - Triade'
+                -
+                  key: 'Trinitas Grand Café ‘de Uithof’'
+                  value: 'Trinitas - Grand Café ‘de Uithof’'
+                -
+                  key: 'Trinitas Grote zaal / concertzaal'
+                  value: 'Trinitas - Grote zaal / concertzaal'
+                -
+                  key: 'Trinitas Lounge de Passage'
+                  value: 'Trinitas - Lounge de Passage'
+                -
+                  key: 'Sionskerk Zalencentrum'
+                  value: 'Sionskerk - Zalencentrum'
               type: select
               display: Locatie
-          -
-            handle: trintias_room
-            field:
-              options:
-                -
-                  key: 1
-                  value: 'Zaal 1'
-                -
-                  key: 2
-                  value: 'Zaal 2'
-                -
-                  key: 3
-                  value: 'Zaal 3'
-                -
-                  key: 4
-                  value: 'Zaal 4'
-              type: select
-              display: 'Zalen trinitas'
-          -
-            handle: sionskerk_room
-            field:
-              options:
-                -
-                  key: 1
-                  value: 'Zaal 1'
-              type: select
-              display: 'Zalen sionskerk'
+              searchable: false
           -
             handle: aantal
             field:
@@ -89,8 +79,6 @@ tabs:
             field:
               type: textarea
               display: Informatie
-              validate:
-                - required
           -
             handle: wensen
             field:

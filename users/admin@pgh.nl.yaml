@@ -36,6 +36,14 @@ preferences:
         - datestamp
         - name
         - e_mail
+    verhuur:
+      columns:
+        - name
+        - datestamp
+        - e_mail
+        - sionskerk_room
+        - trintias_room
+        - location
   locale: en
   favorites: {  }
   start_page: collections
