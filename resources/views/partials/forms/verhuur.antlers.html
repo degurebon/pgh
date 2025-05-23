@@ -1,0 +1,57 @@
+<section class="bg-orange-50">
+    <div class="py-4 lg:py-8 px-4">
+        {{ form:verhuur }}
+        <div class="space-y-8">
+            {{ fields }}
+
+            {{ if type == "text"}}
+                    <div>
+                        <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
+                        <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                        {{ if error }}
+                            <p class="text-red-700">{{ error }}</p>
+                        {{ /if }}
+                    </div>
+            {{ /if }}
+
+            {{ if type == "integer"}}
+                    <div>
+                        <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
+                        <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                        {{ if error }}
+                            <p class="text-red-700">{{ error }}</p>
+                        {{ /if }}
+                    </div>
+            {{ /if }}
+
+            {{ if type == "select"}}
+                    <div>
+                        <label class="block mb-2 text-sm font-medium ">{{ display }}</label>
+
+                        <select name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+                            <option value={{ field }}</option>
+                        </select>
+                        {{ if error }}
+                            <p class="text-red-700">{{ error }}</p>
+                        {{ /if }}
+                    </div>
+            {{ /if }}
+
+            {{ if type == "textarea"}}
+                    <div>
+                        <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
+                        <input name={{ handle }} class="block p-2.5 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                        {{ if error }}
+                            <p class="text-red-700">{{ error }}</p>
+                        {{ /if }}
+                    </div>
+            {{ /if }}
+
+            {{ /fields }}
+
+            <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg border shadow-sm sm:w-fit bg-white hover:bg-green-200 ">Versturen</button>
+        </div>
+        {{ /form:verhuur }}
+    </div>
+</section>

@@ -4,20 +4,11 @@ blueprint: locatie_en_zaal_verhuur
 title: 'Locatie en zaal verhuur'
 author: 47e120c0-c653-4bfd-a81f-bc32cec57707
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1747741651
+updated_at: 1747917544
 template: verhuur/index
 banner: locaties/trinitas/hal-2-scaled-2048x1152.jpg
 template_field: verhuur_locaties
 bard_field:
-  -
-    type: heading
-    attrs:
-      textAlign: left
-      level: 1
-    content:
-      -
-        type: text
-        text: 'Locatie- en zaalverhuur'
   -
     type: paragraph
     attrs:

@@ -1,4 +1,4 @@
-title: Articles
+title: Article
 tabs:
   main:
     display: Main
@@ -13,33 +13,24 @@ tabs:
               validate:
                 - required
           -
-            handle: content
-            field:
-              type: markdown
-              display: Content
-              localizable: true
-          -
-            handle: author
-            field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
-          -
             handle: template
             field:
               type: template
               display: Template
               localizable: true
-              folder: articles
           -
-            handle: featured_image
+            handle: bard_field
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard Field'
+          -
+            handle: thumbnail
             field:
               max_files: 1
               container: assets
               type: assets
-              display: 'Featured Image'
+              display: Thumbnail
   sidebar:
     display: Sidebar
     sections:
@@ -64,7 +55,7 @@ tabs:
             field:
               type: entries
               collections:
-                - blog
+                - articles
               max_items: 1
               listable: false
               localizable: true

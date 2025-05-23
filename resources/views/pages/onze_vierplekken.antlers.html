@@ -1,22 +1,63 @@
-<div class="container min-h-dvh max-w-sm md:max-w-xl xl:max-w-4xl mx-auto py-8">
-    {{ content }}
+<div class="container min-h-dvh max-w-sm md:max-w-xl xl:max-w-4xl mx-auto py-12 px-4 font-sans">
 
-    {{ markdown_field_1 }}
+  <!-- Optional: Title or Hero Section -->
+  <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
+    {{ title }}
+  </h1>
 
-    {{ markdown_field_2 }}
+    <!-- Subtle, Elegant Header -->
+    <div class="bg-gray-50 border-l-4 border-orange-500 pl-6 pr-4 py-4 mb-12 shadow-sm rounded-md">
+        <p class="text-lg italic text-gray-700 leading-relaxed">
+            {{ header }}
+        </p>
+    </div>
 
-    <img src="{{ assets_field_1 }}" class="border-2 border-orange-400 p-1" alt="{{ assets_field_1:alt }}" />
+    <!-- Section 1 -->
+    <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
+    <div class="flex-1 bg-white border-l-4 border-orange-500 pl-6 pr-4 py-4 shadow-sm rounded-md">
+        <div class="prose max-w-none prose-orange">
+        {{ bard_field_1 }}
+        </div>
+    </div>
+    <div class="flex-1 flex justify-center">
+        <img src="{{ assets_field_1 }}" alt="{{ assets_field_1:alt }}" class="rounded-xl border-4 border-orange-500 p-2 shadow-md max-w-full" />
+    </div>
+    </div>
 
-    {{ markdown_field_3 }}
+    <!-- Section 2 -->
+    <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
+    <div class="flex-1 bg-white border-l-4 border-orange-500 pl-6 pr-4 py-4 shadow-sm rounded-md">
+        <div class="prose max-w-none prose-orange">
+        {{ bard_field_2 }}
+        </div>
+    </div>
+    <div class="flex-1 flex justify-center">
+        <img src="{{ assets_field_2 }}" alt="{{ assets_field_2:alt }}" class="rounded-xl border-4 border-orange-500 p-2 shadow-md max-w-full" />
+    </div>
+    </div>
 
-    <img src="{{ assets_field_2 }}" class="border-2 border-orange-400 p-1" alt="{{ assets_field_2:alt }}" />
+    <!-- Section 3 -->
+    <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
+    <div class="flex-1 bg-white border-l-4 border-orange-500 pl-6 pr-4 py-4 shadow-sm rounded-md">
+        <div class="prose max-w-none prose-orange">
+        {{ bard_field_3 }}
+        </div>
+    </div>
+    <div class="flex-1 flex justify-center">
+        <img src="{{ assets_field_3 }}" alt="{{ assets_field_3:alt }}" class="rounded-xl border-4 border-orange-500 p-2 shadow-md max-w-full" />
+    </div>
+    </div>
 
-    {{ markdown_field_4 }}
-
-    <img src="{{ assets_field_3 }}" class="border-2 border-orange-400 p-1" alt="{{ assets_field_3:alt }}" />
+    <!-- Section 4 -->
+    <div class="flex flex-col md:flex-row items-center gap-6 mb-10">
+    <div class="flex-1 bg-white border-l-4 border-orange-500 pl-6 pr-4 py-4 shadow-sm rounded-md">
+        <div class="prose max-w-none prose-orange">
+        {{ bard_field_4 }}
+        </div>
+    </div>
+    <div class="flex-1 flex justify-center">
+        <img src="{{ assets_field_4 }}" alt="{{ assets_field_4:alt }}" class="rounded-xl border-4 border-orange-500 p-2 shadow-md max-w-full" />
+    </div>
+    </div>
     
-    {{ markdown_field_5 }}
-
-    <img src="{{ assets_field_4 }}" class="border-2 border-orange-400 p-1" alt="{{ assets_field_4:alt }}" />
-
 </div>

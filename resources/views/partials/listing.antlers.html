@@ -1,10 +1,15 @@
-<section class="border border-black mt-12">
-    {{ slot }}
-    {{ collection:articles :limit="limit" }}
-    
-        <a href="{{ url }}" class="flex items-center justify-between p-5 border-t border-black text-black hover:text-orange-300 hover:bg-orange-150">
-            <span>{{ title }}</span>
-            <span class="text-orange-900 text-sm">{{ date }}</span>
+<section class="mt-12">
+  {{ slot }}
+
+  <div class="overflow-x-auto">
+    <div class="flex gap-4 snap-x snap-mandatory pb-4">
+      {{ collection:articles :limit="limit" }}
+        <a href="{{ url }}" class="min-w-[250px] max-w-xs flex-shrink-0 bg-white rounded-xl shadow-md p-4 snap-start hover:bg-orange-100 transition-colors duration-200">
+          <img src="{{ thumbnail }}" alt="{{ title }}" class="w-full h-40 object-cover rounded-lg mb-3 border border-orange-300" />
+          <h3 class="font-semibold text-lg text-black mb-1">{{ title }}</h3>
+          <p class="text-sm text-orange-900">{{ date }}</p>
         </a>
-    {{ /collection:articles }}
+      {{ /collection:articles }}
+    </div>
+  </div>
 </section>

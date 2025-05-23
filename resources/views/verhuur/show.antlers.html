@@ -1,79 +1,30 @@
-<div class="container min-h-dvh md:max-w-8xl mx-auto py-8">
+<div class="container min-h-dvh">
+    <div class="md:max-w-8xl mx-auto py-8">
 
-    <h1 class="text-3xl bg-orange-400 text-center text-black font-bold mt-6 p-6">{{ title }}</h1>
+        <h1 class="text-3xl bg-orange-400 text-center text-black font-bold mt-6 p-6">{{ title }}</h1>
 
-    {{ taxonomy_terms_field }}
+        {{ taxonomy_terms_field }}
 
-    <div class="flex mb-4 mt-8">
-            {{ replicator_field }}
-            <div class="w-1/4 mx-1">
-                {{ title }}
-                {{ bard_field }}
-                
+            <div class="flex justify-center mt-8">
+                <div class="w-full max-w-4xl">
+                    {{ replicator_field }}
+                    <div class="bg-white shadow-lg p-6 mb-6 mx-2">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">{{ title }}</h2>
+                        <div class="text-gray-700">
+                        {{ bard_field }}
+                        </div>
+                    </div>
+                    {{ /replicator_field }}
+                </div>
             </div>
-        {{ /replicator_field }}
+
+        {{ /taxonomy_terms_field }}
+
     </div>
 
-    {{ /taxonomy_terms_field }}
+    <div class="max-w-sm md:max-w-xl lg:max-w-4xl mx-auto my-6">
 
-    <p>{{ content }}</p>
+        {{ partial:forms/verhuur }}
 
-    <section class="bg-orange-50">
-        <div class="py-4 lg:py-8 px-4">
-            {{ form:verhuur }}
-            <div class="space-y-8">
-                {{ fields }}
-
-                {{ if type == "text"}}
-                        <div>
-                            <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
-                            <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
-                            {{ if error }}
-                                <p class="text-red-700">{{ error }}</p>
-                            {{ /if }}
-                        </div>
-                {{ /if }}
-
-                {{ if type == "integer"}}
-                        <div>
-                            <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
-                            <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
-                            {{ if error }}
-                                <p class="text-red-700">{{ error }}</p>
-                            {{ /if }}
-                        </div>
-                {{ /if }}
-
-                {{ if type == "select"}}
-                        <div>
-                            <label class="block mb-2 text-sm font-medium ">{{ display }}</label>
-
-                            <select name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm">
-                                <option value={{ field }}</option>
-                            </select>
-                            {{ if error }}
-                                <p class="text-red-700">{{ error }}</p>
-                            {{ /if }}
-                        </div>
-                {{ /if }}
-
-                {{ if type == "textarea"}}
-                        <div>
-                            <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
-                            <input name={{ handle }} class="block p-2.5 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
-                            {{ if error }}
-                                <p class="text-red-700">{{ error }}</p>
-                            {{ /if }}
-                        </div>
-                {{ /if }}
-
-                {{ /fields }}
-
-                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-                <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg border shadow-sm sm:w-fit bg-white hover:bg-green-200 ">Versturen</button>
-            </div>
-            {{ /form:verhuur }}
-        </div>
-    </section>
-
+    </div>
 </div>

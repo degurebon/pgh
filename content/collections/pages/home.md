@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 47e120c0-c653-4bfd-a81f-bc32cec57707
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1747224313
+updated_at: 1747918165
 markdown_field_1: 'Dit is de home pagina'
 assets_field_1:
   - groot-dsc_0449.jpg
@@ -18,4 +18,19 @@ entries_field_1:
 collections_field_1:
   - agenda
 form_field_1: contact
+bard_field_1:
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Ontdek onze gemeente'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Op deze site ontdek je dat de Protestantse Gemeente (PG) Heerenveen veel te bieden heeft. In het winterseizoen staat ons zgn. Bouwstenenboek vol met interessante gesprekskringen, leesgroepen en gastsprekers. Of kijk eens bij de activiteiten voor de jeugd in verschillende leeftijdsgroepen. Of kom door de week eens langs voor een praatje met een van de vrijwilligers. Het is aan jou!'
 ---

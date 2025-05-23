@@ -13,88 +13,63 @@ tabs:
               validate:
                 - required
           -
-            handle: markdown_field_1
+            handle: header
             field:
-              type: markdown
-              display: 'Markdown Field 1'
-              buttons:
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - quote
-                - link
-                - image
-                - table
-                - code
-              automatic_line_breaks: false
+              remove_empty_nodes: false
+              type: bard
+              display: Header
           -
-            handle: markdown_field_2
+            handle: bard_field_1
             field:
-              type: markdown
-              display: 'Markdown Field 2'
-              width: 50
-              buttons:
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - quote
-                - link
-                - image
-                - table
-                - code
-              automatic_line_breaks: false
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard Field 1'
           -
             handle: assets_field_1
             field:
               container: assets
               type: assets
               display: 'Assets Field 1'
-              width: 50
               max_files: 1
+          -
+            handle: bard_field_2
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard Field 2'
           -
             handle: assets_field_2
             field:
               container: assets
               type: assets
               display: 'Assets Field 2'
-              width: 50
               max_files: 1
           -
-            handle: markdown_field_3
+            handle: bard_field_3
             field:
-              type: markdown
-              display: 'Markdown Field 3'
-              width: 50
-          -
-            handle: markdown_field_4
-            field:
-              type: markdown
-              display: 'Markdown Field 4'
-              width: 50
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard Field 3'
           -
             handle: assets_field_3
             field:
               container: assets
               type: assets
               display: 'Assets Field 3'
-              width: 50
               max_files: 1
+          -
+            handle: bard_field_4
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard Field 4'
           -
             handle: assets_field_4
             field:
               container: assets
               type: assets
               display: 'Assets Field 4'
-              width: 50
               max_files: 1
-          -
-            handle: markdown_field_5
-            field:
-              type: markdown
-              display: 'Markdown Field 5'
-              width: 50
           -
             handle: template
             field:

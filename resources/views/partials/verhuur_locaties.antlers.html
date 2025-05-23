@@ -1,18 +1,15 @@
-<section class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
-    {{ collection:verhuur_locaties :limit="limit" }}
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 md:px-0">
+  {{ collection:verhuur_locaties :limit="limit" }}
+    
+    <a href="{{ url }}" class="block">
+      <div class="w-full overflow-hidden rounded shadow-lg bg-gray-50 hover:shadow-2xl transition-shadow duration-300">
+        <img class="h-48 w-full object-cover" src="{{ assets_field }}" alt="{{ assets_field:alt }}">
         
-                <a class="col-span-1" href="{{ url }}">
-                
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img class="h-48 w-96" src="{{ assets_field }}" alt="{{ assets_field:alt }}">
-                        <div class="px-6 py-4">
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                        <span class="inline-block bg-orange-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ title }}</span>
-                        </div>
-                    </div>
-                    
-                </a>
+        <div class="px-6 py-4 text-center">
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">{{ title }}</h2>
+        </div>
+      </div>
+    </a>
 
-    {{ /collection:verhuur_locaties }}
+  {{ /collection:verhuur_locaties }}
 </section>
