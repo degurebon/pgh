@@ -6,8 +6,19 @@
     <div class="bg-red-500 text-white p-2">Er is iets foutgegaan</div>
 {{ /if }}
 
-<div class="container min-h-dvh max-w-sm md:max-w-xl mx-auto">
-    {{ content }}
+<div class="container min-h-dvh max-w-sm md:max-w-xl xl:max-w-4xl mx-auto py-12 px-4">
+
+  <!-- Titel -->
+  <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
+    {{ title }}
+  </h1>
+
+    <!-- Header -->
+    <div class="bg-gray-50 border-l-4 border-orange-500 pl-6 pr-4 py-4 mb-12 shadow-sm rounded-md">
+        <p class="text-lg italic text-gray-700 leading-relaxed">
+            {{ header }}
+        </p>
+    </div>
 
     <div class="mx-auto max-w-screen-md">
         {{ partial:forms/contact }}

@@ -8,7 +8,7 @@ assets_field_3: haskerdijken-de-kapelle.jpg
 assets_field_4: skoattertsjerke.jpg
 template_field: pages/onze_vierplekken
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1747920847
+updated_at: 1748020936
 markdown_field_1: |-
   Onze vierplekken
 
@@ -41,12 +41,6 @@ markdown_field_5: |-
   Schoterlandseweg 24
   8451 CP Oudeschoot
 header:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Onze vierplekken'
   -
     type: paragraph
     content:
@@ -92,7 +86,9 @@ bard_field_1:
               rel: null
               target: _blank
               title: null
-        text: ' Bekijk de livestrem'
+          -
+            type: bold
+        text: ' Bekijk de livestream'
 bard_field_2:
   -
     type: heading
@@ -126,6 +122,8 @@ bard_field_2:
               rel: null
               target: _blank
               title: null
+          -
+            type: bold
         text: ' Bekijk de livestream'
 bard_field_3:
   -

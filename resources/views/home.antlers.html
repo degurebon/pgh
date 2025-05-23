@@ -1,12 +1,14 @@
-<div class="container min-h-dvh max-w-sm md:max-w-xl lg:max-w-4xl mx-auto py-12 px-4">
+<div class="container min-h-dvh max-w-sm md:max-w-xl lg:max-w-4xl mx-auto pt-12 px-4">
 
-  <!-- Page Title -->
-  <h1 class="text-3xl font-extrabold text-center text-gray-800 my-8">{{ title }}</h1>
+  <!-- Titel -->
+  <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
+      {{ title }}
+  </h1>
 
   <!-- Listing Partial -->
-  <div class="mb-10">
-    {{ partial:partials/listing limit="5" }}
-  </div>
+  <section class="mb-10 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ partial:partials/listing }}
+  </section>
 
   <!-- Bard Content -->
   <div class="bg-gray-50 p-6 rounded-xl shadow-md mb-12">

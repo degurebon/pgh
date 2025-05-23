@@ -4,7 +4,7 @@ blueprint: page
 title: Kerkdiensten
 author: 47e120c0-c653-4bfd-a81f-bc32cec57707
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1747128007
+updated_at: 1748021302
 recurrence_rule_field:
   count: '1'
   enable_bysetpos: false

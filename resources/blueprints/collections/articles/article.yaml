@@ -13,24 +13,18 @@ tabs:
               validate:
                 - required
           -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
-          -
-            handle: bard_field
-            field:
-              remove_empty_nodes: false
-              type: bard
-              display: 'Bard Field'
-          -
             handle: thumbnail
             field:
               max_files: 1
               container: assets
               type: assets
               display: Thumbnail
+          -
+            handle: bard_field
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Content
   sidebar:
     display: Sidebar
     sections:

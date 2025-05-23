@@ -4,6 +4,6 @@ blueprint: page
 title: Agenda
 author: 47e120c0-c653-4bfd-a81f-bc32cec57707
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1747050429
+updated_at: 1748021261
 template: agenda/index
 ---

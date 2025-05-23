@@ -6,39 +6,58 @@
     <div class="bg-red-500 text-white p-2">Er is iets foutgegaan</div>
 {{ /if }}
 
-<div class="container min-h-dvh mb-6 mx-auto">
-    <div class="max-w-sm md:max-w-xl mx-auto">
+<div class="container min-h-dvh py-12 px-4 mx-auto">
+    <div class="max-w-sm md:max-w-xl lg:max-w-4xl mx-auto">
+    <!-- Titel -->
+    <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
+        {{ title }}
+    </h1>
+
+    <!-- Header -->
+    <div class="bg-gray-50 border-l-4 border-orange-500 pl-6 pr-4 py-4 mb-12 shadow-sm rounded-md">
+        <p class="text-lg italic text-gray-700 leading-relaxed">
+            {{ header }}
+        </p>
+    </div>
+
+    <div class="max-w-sm md:max-w-xl mb-12 mx-auto">
 
         {{ partial:forms/kaarsje }}
 
     </div>
     
-    <div class="max-w-sm md:max-w-xl lg:max-w-4xl mx-auto">
+    </div>
+    <div class="max-w-sm md:max-w-xl lg:max-w-5xl xl:max-w-7xl mx-auto">
 
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
 
         {{ form:submissions in="kaarsje" }}
-        
-                <div class="col-span-1">
-                
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img class="w-full" src="/assets/static/candle.gif" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                        <p class="text-gray-700 text-base overflow-hidden text-ellipsis">
-                            {{ prayer }}
-                        </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                        <span class="inline-block bg-orange-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ date }}</span>
-                        <span class="inline-block bg-orange-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Gebed van {{ name }}</span>
-                        </div>
-                    </div>
-                    
-                </div>
+
+        <div class="col-span-1">
+            <div class="max-w-sm mx-auto rounded overflow-hidden shadow-xl bg-white transition-transform hover:scale-105 duration-300">
+            <img class="w-full h-48 object-cover" src="/assets/static/candle.gif" alt="Candle image">
+            
+            <div class="px-6 py-4">
+                <p class="text-gray-700 text-base line-clamp-4">
+                {{ prayer }}
+                </p>
+            </div>
+            
+            <div class="px-6 pt-2 pb-4 flex flex-wrap gap-2">
+                <span class="inline-block bg-orange-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+                {{ date }}
+                </span>
+                <span class="inline-block bg-orange-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+                Gebed van {{ name }}
+                </span>
+            </div>
+            </div>
+        </div>
 
         {{ /form:submissions }}
 
         </section>
+
 
     </div>
 

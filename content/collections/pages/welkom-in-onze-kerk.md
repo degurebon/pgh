@@ -26,7 +26,7 @@ textarea_field_2: |-
 
   Met de hulp van de Geest zetten we ons in voor heelheid van de schepping en dienstbaarheid, zowel lokaal als wereldwijd.
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1747053527
+updated_at: 1748021234
 template_field: 2assets
 author: 47e120c0-c653-4bfd-a81f-bc32cec57707
 template: pages/2_assets

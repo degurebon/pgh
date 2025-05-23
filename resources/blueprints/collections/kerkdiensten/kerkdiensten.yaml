@@ -27,13 +27,6 @@ tabs:
               default: '01:00:00'
               type: time
               display: Lengte
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
-              folder: kerkdiensten
   sidebar:
     display: Sidebar
     sections:
