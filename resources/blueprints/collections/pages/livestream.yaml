@@ -1,5 +1,4 @@
-order: 4
-title: Page
+title: Livestream
 tabs:
   main:
     display: Main
@@ -23,6 +22,7 @@ tabs:
                 - h1
                 - h2
                 - h3
+                - h4
                 - bold
                 - italic
                 - unorderedlist
@@ -34,18 +34,20 @@ tabs:
                 - table
                 - underline
                 - small
-                - code
-                - codeblock
                 - alignleft
                 - aligncenter
                 - alignright
-              antlers: true
+          -
+            handle: video_field
+            field:
+              type: video
+              display: 'Video Field'
           -
             handle: template
             field:
               type: template
-              display: Template
-              localizable: true
+              display: 'Template Field'
+              folder: pages
   sidebar:
     display: Sidebar
     sections:

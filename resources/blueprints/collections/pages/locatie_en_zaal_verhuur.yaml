@@ -47,6 +47,7 @@ tabs:
           -
             handle: template_field
             field:
+              folder: pages
               type: template
               display: 'Template Field'
   sidebar:
