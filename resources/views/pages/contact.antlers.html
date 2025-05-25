@@ -1,16 +1,16 @@
 {{ if {form:success in="contact"} }}
-    <div class="bg-green-300 text-white p-2">Bericht succesvol verzonden</div>
+<div class="bg-green-300 text-white p-2">Bericht succesvol verzonden</div>
 {{ /if }}
 
 {{ if {form:errors in="contact"} }}
-    <div class="bg-red-500 text-white p-2">Er is iets foutgegaan</div>
+<div class="bg-red-500 text-white p-2">Er is iets foutgegaan</div>
 {{ /if }}
 
 <div class="container min-h-dvh max-w-sm md:max-w-xl xl:max-w-4xl mx-auto py-12 px-4">
 
     <!-- Titel -->
     <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
-    {{ title }}
+        {{ title }}
     </h1>
 
     <!-- Header -->
@@ -21,5 +21,5 @@
     <div class="mx-auto max-w-screen-md">
         {{ partial:forms/contact }}
     </div>
-    
+
 </div>

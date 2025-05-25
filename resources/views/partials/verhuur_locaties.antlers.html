@@ -1,15 +1,15 @@
 <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 md:px-0">
   {{ collection:verhuur_locaties :limit="limit" }}
-    
-    <a href="{{ url }}" class="block">
-      <div class="w-full overflow-hidden rounded shadow-lg bg-gray-50 hover:shadow-2xl transition-shadow duration-300">
-        <img class="h-48 w-full object-cover" src="{{ assets_field }}" alt="{{ assets_field:alt }}">
-        
-        <div class="px-6 py-4 text-center">
-          <h2 class="text-2xl font-bold text-gray-800 mb-2">{{ title }}</h2>
-        </div>
+
+  <a href="{{ url }}" class="block">
+    <div class="w-full overflow-hidden rounded shadow-lg bg-gray-50 hover:shadow-2xl transition-shadow duration-300">
+      <img class="h-48 w-full object-cover" src="{{ assets_field }}" alt="{{ assets_field:alt }}">
+
+      <div class="px-6 py-4 text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">{{ title }}</h2>
       </div>
-    </a>
+    </div>
+  </a>
 
   {{ /collection:verhuur_locaties }}
 </section>

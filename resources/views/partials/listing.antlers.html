@@ -1,7 +1,8 @@
 {{ collection:articles :limit="limit" }}
-  <a href="{{ url }}" class="w-fit bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition-colors duration-200">
-    <img src="{{ thumbnail }}" alt="{{ title }}" class="h-40 w-64 object-cover rounded-lg mb-3 border border-orange-300" />
-    <h3 class="font-semibold text-lg text-black mb-1 w-64">{{ title }}</h3>
-    <p class="text-sm text-orange-900">{{ date }}</p>
-  </a>
+<a href="{{ url }}" class="w-fit bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition-colors duration-200">
+  <img src="{{ thumbnail }}" alt="{{ title }}"
+    class="h-40 w-64 object-cover rounded-lg mb-3 border border-orange-300" />
+  <h3 class="font-semibold text-lg text-black mb-1 w-64">{{ title }}</h3>
+  <p class="text-sm text-orange-900">{{ date }}</p>
+</a>
 {{ /collection:articles }}

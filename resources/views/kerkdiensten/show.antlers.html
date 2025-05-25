@@ -1,5 +1,5 @@
 <div class="container min-h-dvh mx-auto px-4">
-    <div class="max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto py-12 px-4">
+  <div class="max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto py-12 px-4">
 
     <!-- Page Title -->
     <h1 class="text-4xl md:text-5xl font-extrabold text-center text-orange-600 mb-12">
@@ -17,16 +17,17 @@
     </div>
 
     <!-- Date & Time Block -->
-    <div class="bg-orange-50 border border-orange-400 text-center text-sm text-orange-900 font-semibold rounded-md p-4 uppercase tracking-wide mb-10">
-      {{ date format="Y-m-d" }} &nbsp; • &nbsp; Start tijd {{ start_time }}  &nbsp; • &nbsp;  Eind tijd {{ end_time }}
+    <div
+      class="bg-orange-50 border border-orange-400 text-center text-sm text-orange-900 font-semibold rounded-md p-4 uppercase tracking-wide mb-10">
+      {{ date format="Y-m-d" }} &nbsp; • &nbsp; Start tijd {{ start_time }} &nbsp; • &nbsp; Eind tijd {{ end_time }}
     </div>
 
-  <!-- Markdown Section 2 -->
-  <div class="bg-gray-50 p-6 rounded-xl shadow-md mb-8">
-    <div class="prose max-w-none prose-orange">
-      {{ content }}
+    <!-- Markdown Section 2 -->
+    <div class="bg-gray-50 p-6 rounded-xl shadow-md mb-8">
+      <div class="prose max-w-none prose-orange">
+        {{ content }}
+      </div>
     </div>
-  </div>
 
   </div>
 </div>

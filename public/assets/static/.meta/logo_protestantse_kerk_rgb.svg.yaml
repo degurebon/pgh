@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: Logo
 size: 92727
-last_modified: 1746036173
+last_modified: 1748019919
 width: '242.67'
 height: '70.87'
 mime_type: image/svg+xml
