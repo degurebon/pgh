@@ -1,46 +1,59 @@
-<div class="container min-h-dvh max-w-sm md:max-w-xl lg:max-w-4xl mx-auto pt-12 px-4">
+{{ if {form:success in="contact"} }}
+<div class="bg-green-300 text-white p-2">Bericht succesvol verzonden</div>
+{{ /if }}
 
-  <!-- Titel -->
-  <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
+{{ if {form:errors in="contact"} }}
+<div class="bg-red-500 text-white p-2">Er is iets foutgegaan</div>
+{{ /if }}
+
+<div class="container min-h-dvh mx-auto py-12 px-4">
+  <div class="max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto py-12 px-4">
+
+    <!-- Titel -->
+    <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
       {{ title }}
-  </h1>
+    </h1>
 
-  <!-- Listing Partial -->
-  <section class="mb-10 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {{ partial:partials/listing }}
-  </section>
+    <!-- Listing Partial -->
+    <div class="md:max-w-4xl mx-auto">
+      <section class="mb-10 mt-12 place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{ partial:partials/listing :limit="3"}}
+      </section>
+    </div>
 
-  <!-- Bard Content -->
-  <div class="bg-gray-50 p-6 rounded-xl shadow-md mb-12">
-    {{ bard_field_1 }}
-  </div>
+    <!-- Bard Content -->
+    <div class="bg-gray-50 p-6 rounded-xl shadow-md mb-12">
+      {{ bard_field_1 }}
+    </div>
 
-  <!-- Image Section -->
-  <div class="mb-16">
-    <div class="flex flex-wrap justify-center gap-6 m-8">
-      {{ assets_field_1 }}
+    <!-- Image Section -->
+    <div class="mb-16">
+      <div class="flex flex-wrap justify-center gap-6 m-8">
+        {{ assets_field_1 }}
         <div class="w-96 h-64">
           <img src="{{ url }}" class="rounded-xl border-2 border-orange-400 p-2 shadow-md" alt="{{ alt }}" />
         </div>
-      {{ /assets_field_1 }}
+        {{ /assets_field_1 }}
+      </div>
     </div>
-  </div>
 
-  <!-- Linked Entries -->
-  <div class="bg-gray-50 p-6 rounded-xl shadow-md my-12">
-    <h2 class="text-xl font-semibold text-gray-700 mb-4">Gerelateerde Links</h2>
-    <ul class="list-disc list-inside space-y-2 text-blue-600">
-      {{ entries_field_1 }}
+    <!-- Linked Entries -->
+    <div class="bg-gray-50 p-6 rounded-xl shadow-md my-12">
+      <h2 class="text-xl font-semibold text-gray-700 mb-4">Gerelateerde Links</h2>
+      <ul class="list-disc list-inside space-y-2 text-blue-600">
+        {{ entries_field_1 }}
         <li>
           <a href="{{ url }}" class="hover:underline">{{ title }}</a>
         </li>
-      {{ /entries_field_1 }}
-    </ul>
+        {{ /entries_field_1 }}
+      </ul>
+    </div>
+
   </div>
 
-</div>
+  <!-- Contact Form Section -->
+  <div class="mx-auto max-w-screen-lg px-4">
+    {{ partial:forms/contact }}
+  </div>
 
-<!-- Contact Form Section -->
-<div class="mx-auto max-w-screen-lg px-4">
-  {{ partial:forms/contact }}
 </div>

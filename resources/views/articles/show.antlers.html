@@ -1,23 +1,25 @@
-<div class="container min-h-dvh max-w-sm md:max-w-xl xl:max-w-4xl mx-auto py-12">
+<div class="container min-h-dvh mx-auto py-12 px-4">
+    <div class="max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto py-12 px-4">
 
-    <!-- Titel -->
-    <h1 class="text-4xl font-extrabold text-center text-orange-600">
-        {{ title }}
-    </h1>
+        <!-- Titel -->
+        <h1 class="text-4xl font-extrabold text-center text-orange-600">
+            {{ title }}
+        </h1>
 
-    <div class="grid grid-cols-4">
-        <div class="col-start-4 border-b text-center text-black border-orange-400 p-1 text-xs uppercase">
-            Aangemaakt op {{ date }}
+        <div class="grid grid-cols-4">
+            <div class="col-start-4 border-b text-center text-black border-orange-400 p-1 text-xs uppercase">
+                Aangemaakt op {{ date format="Y-m-d" }}
+            </div>
         </div>
-    </div>
 
-    <div class="my-3">
-        <img src="{{ thumbnail }}" class="border mt-8 mx-auto border-orange-400 p-1" alt="{{ thumbnail:alt }}" />
-    </div>
+        <div class="my-3">
+            <img src="{{ thumbnail }}" class="border mt-8 mx-auto border-orange-400 p-1" alt="{{ thumbnail:alt }}" />
+        </div>
 
-      <!-- Bard Content -->
-    <div class="bg-gray-50 p-6 rounded-xl shadow-md mb-12">
-        {{ bard_field }}
-    </div>
+        <!-- Bard Content -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md mb-12">
+            {{ bard_field }}
+        </div>
 
+    </div>
 </div>

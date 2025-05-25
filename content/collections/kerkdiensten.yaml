@@ -7,11 +7,9 @@ taxonomies:
 revisions: false
 route: '/kerkdiensten/{year}-{month}-{day}/{slug}'
 date: true
-sort_dir: desc
+sort_dir: asc
 preview_targets:
   -
     label: Entry
     url: '{permalink}'
     refresh: true
-structure:
-  root: false

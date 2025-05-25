@@ -13,6 +13,12 @@ tabs:
               validate:
                 - required
           -
+            handle: collections_field_1
+            field:
+              max_items: 5
+              type: collections
+              display: Collections
+          -
             handle: bard_field_1
             field:
               remove_empty_nodes: false
@@ -25,8 +31,6 @@ tabs:
               container: assets
               type: assets
               display: 'Assets Field 1'
-      -
-        fields:
           -
             handle: entries_field_1
             field:
@@ -37,12 +41,6 @@ tabs:
                 - articles
                 - pages
                 - agenda
-          -
-            handle: collections_field_1
-            field:
-              max_items: 5
-              type: collections
-              display: 'Collections Field 1'
   sidebar:
     display: Sidebar
     sections:

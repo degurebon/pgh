@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 47e120c0-c653-4bfd-a81f-bc32cec57707
 updated_by: 47e120c0-c653-4bfd-a81f-bc32cec57707
-updated_at: 1747918165
+updated_at: 1748191421
 markdown_field_1: 'Dit is de home pagina'
 assets_field_1:
   - groot-dsc_0449.jpg
@@ -14,7 +14,7 @@ assets_field_1:
   - yagl-ofdom8-1536x1024.jpg
 entries_field_1:
   - e1e70c60-ad01-4dd7-ade6-11760a361716
-  - 50b44bdb-a089-4f6d-9e07-0f146b9294c8
+  - 01db9e7a-bedf-4a4a-8ae4-c947ac631440
 collections_field_1:
   - agenda
 form_field_1: contact
