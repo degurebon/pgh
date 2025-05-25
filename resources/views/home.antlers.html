@@ -7,7 +7,7 @@
 {{ /if }}
 
 <div class="container min-h-dvh mx-auto py-12 px-4">
-  <div class="max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto py-12 px-4">
+  <div class="max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto py-12">
 
     <!-- Titel -->
     <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
@@ -15,8 +15,8 @@
     </h1>
 
     <!-- Listing Partial -->
-    <div class="md:max-w-4xl mx-auto">
-      <section class="mb-10 mt-12 place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="max-w-4xl mx-auto">
+      <section class="mb-10 mt-12 place-items-center grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
         {{ partial:partials/listing :limit="3"}}
       </section>
     </div>
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Image Section -->
-    <div class="mb-16">
+    <div class="mb-12">
       <div class="flex flex-wrap justify-center gap-6 m-8">
         {{ assets_field_1 }}
         <div class="w-96 h-64">
@@ -37,8 +37,12 @@
       </div>
     </div>
 
+  </div>
+
+  <div class="max-w-4xl mx-auto">
+
     <!-- Linked Entries -->
-    <div class="bg-gray-50 p-6 rounded-xl shadow-md my-12">
+    <div class="bg-gray-50 p-6 rounded-xl shadow-md my-2">
       <h2 class="text-xl font-semibold text-gray-700 mb-4">Gerelateerde Links</h2>
       <ul class="list-disc list-inside space-y-2 text-blue-600">
         {{ entries_field_1 }}
@@ -49,11 +53,13 @@
       </ul>
     </div>
 
-  </div>
 
-  <!-- Contact Form Section -->
-  <div class="mx-auto max-w-screen-lg px-4">
-    {{ partial:forms/contact }}
+
+    <!-- Contact Form Section -->
+    <div class="mx-auto max-w-screen-lg px-4">
+      {{ partial:forms/contact }}
+    </div>
+    
   </div>
 
 </div>

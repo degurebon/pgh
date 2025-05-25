@@ -1,30 +1,57 @@
-<div class="bg-orange-50 drop-shadow-sm text-xs uppercase text-black px-4 py-2 flex items-center justify-between">
+<div class="bg-orange-50 drop-shadow-sm">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <!-- Left: Logo -->
-    <a href="/"> <div class="flex items-center space-x-2 h-20 w-40">
-        {{ svg src="/assets/static/logo_protestantse_kerk_rgb.svg" class="fill-current" }}
+    <a href="/">
+        <div class="flex items-center space-x-2 h-20 w-40">
+            {{ svg src="/assets/static/logo_protestantse_kerk_rgb.svg" class="fill-current" }}
 
         </div>
     </a>
-
-    <!-- Right: Nav Links -->
-    <div class="flex items-center space-x-4 text-center">
+    <button data-collapse-toggle="navbar-multi-level" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-orange-200"
+      aria-controls="navbar-multi-level" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg bg-orange-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-orange-50">
         {{ nav:mainnav }}
-        <div class="relative group">
-            <a href="{{ url }}" class="p-2 block hover:text-orange-400 transition duration-200">{{ title }}</a>
-
-            {{ if children }}
-            <ul class="absolute hidden group-hover:block bg-orange-100 text-left space-y-1 p-2">
-                {{ children }}
-                <li>
-                    <a href="{{ url }}"
-                        class="block px-2 py-1 hover:text-orange-400 {{ if is_current }}current-child{{ endif }}">
-                        {{ title }}
-                    </a>
-                </li>
-                {{ /children }}
+        {{ if children }}
+        <li>
+          <button id="{{ url }}Link" data-dropdown-toggle="{{ title }}"
+            class="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-orange-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-400 md:p-0 md:w-auto">{{ title }}
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div id="{{ title }}"
+            class="z-10 hidden font-normal bg-orange-50 divide-y divide-orange-100 rounded-lg shadow-sm w-44">
+            <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+              {{ children }}
+              <li>
+                <a href="{{ url }}"
+                  class="block px-4 py-2 hover:bg-orange-100">{{ title }}</a>
+              </li>
+              {{ /children }}
             </ul>
-            {{ endif }}
-        </div>
-        {{ /nav:mainnav }}
+          </div>
+        </li>
+        {{ else }}
+        <li>
+          <a href="{{ url }}" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-orange-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-400 md:p-0">
+            {{ title }}
+          </a>
+        </li>
+        {{ endif }}
+        
+         {{ /nav:mainnav }}
+      </ul>
     </div>
+  </div>
 </div>
