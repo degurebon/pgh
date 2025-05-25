@@ -1,6 +1,7 @@
 title: Agenda
 template: agenda/show
 layout: layout
+mount: fe130173-878a-4c87-a9e2-0a549adbfdc8
 revisions: false
 route: '/agenda/{year}/{slug}'
 date: true

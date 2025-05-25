@@ -1,0 +1,17 @@
+title: Jeugd
+template: jeugd/show
+layout: layout
+mount: 527ebcbb-ea7e-414a-8c03-7b7a9b97926e
+revisions: false
+route: '/jeugd/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: false

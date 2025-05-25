@@ -5,6 +5,13 @@
         {{ title }}
     </h1>
 
+    <!-- Header -->
+    {{ if header }}
+    <div class="bg-gray-50 border-l-4 border-orange-500 pl-6 pr-4 py-4 mb-12 shadow-sm rounded-md">
+        {{ header }}
+    </div>
+    {{ /if }}
+
     <section class="mb-10 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {{ partial:partials/listing }}
     </section>

@@ -1,0 +1,99 @@
+title: Jeugd
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: banner
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Banner
+          -
+            handle: header
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Header
+              buttons:
+                - h1
+                - h2
+                - h3
+                - h4
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - underline
+                - strikethrough
+                - small
+                - alignleft
+                - aligncenter
+                - alignright
+          -
+            handle: bard_field
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard Field'
+              buttons:
+                - h1
+                - h2
+                - h3
+                - h4
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - underline
+                - small
+                - alignleft
+                - aligncenter
+                - alignright
+                - strikethrough
+          -
+            handle: template
+            field:
+              folder: jeugd
+              type: template
+              display: Template
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

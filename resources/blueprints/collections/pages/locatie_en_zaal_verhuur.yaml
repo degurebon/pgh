@@ -45,11 +45,11 @@ tabs:
                 - alignjustify
               container: assets
           -
-            handle: template_field
+            handle: template
             field:
-              folder: pages
+              folder: verhuur
               type: template
-              display: 'Template Field'
+              display: Template
   sidebar:
     display: Sidebar
     sections:

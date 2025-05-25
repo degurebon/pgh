@@ -7,7 +7,7 @@
             {{ if type == "text"}}
                     <div>
                         <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
-                        <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                        <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg bg-white shadow-sm" value="{{ input }}">
                         {{ if error }}
                             <p class="text-red-700">{{ error }}</p>
                         {{ /if }}
@@ -17,7 +17,7 @@
             {{ if type == "integer"}}
                     <div>
                         <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
-                        <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                        <input name={{ handle }} class="block p-3 w-full text-sm rounded-lg bg-white shadow-sm" value="{{ input }}">
                         {{ if error }}
                             <p class="text-red-700">{{ error }}</p>
                         {{ /if }}
@@ -28,7 +28,7 @@
                     <div>
                         <label class="block mb-2 text-sm font-medium ">{{ display }}</label>
 
-                        <select name={{ handle }} class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+                        <select name={{ handle }} class="block p-3 w-full text-sm rounded-lg bg-white shadow-sm">
                             <option value={{ field }}</option>
                         </select>
                         {{ if error }}
@@ -40,7 +40,7 @@
             {{ if type == "textarea"}}
                     <div>
                         <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
-                        <input name={{ handle }} class="block p-2.5 w-full text-sm rounded-lg border shadow-sm" value="{{ input }}">
+                        <input name={{ handle }} class="block p-2.5 w-full block text-sm rounded-lg bg-white shadow-sm" value="{{ input }}">
                         {{ if error }}
                             <p class="text-red-700">{{ error }}</p>
                         {{ /if }}
@@ -50,7 +50,7 @@
             {{ /fields }}
 
             <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-            <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg border shadow-sm sm:w-fit bg-white hover:bg-green-200 ">Versturen</button>
+            <button type="submit" class="py-3 px-5 block p-3 w-full text-sm rounded-lg bg-white shadow-sm sm:w-fit bg-white hover:bg-green-200">Versturen</button>
         </div>
         {{ /form:verhuur }}
     </div>

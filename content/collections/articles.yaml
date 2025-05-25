@@ -1,6 +1,7 @@
 title: Articles
 template: articles/show
 layout: layout
+mount: 1b12da82-ce63-4e4a-946c-f68124e357ff
 revisions: false
 route: '/artikel/{year}/{slug}'
 date: true

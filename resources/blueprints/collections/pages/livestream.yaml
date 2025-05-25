@@ -46,7 +46,7 @@ tabs:
             handle: template
             field:
               type: template
-              display: 'Template Field'
+              display: Template
               folder: pages
   sidebar:
     display: Sidebar

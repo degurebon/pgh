@@ -4,18 +4,18 @@
       <div class="space-y-8">
             <div>
                 <label for="subject" class="block mb-2 text-sm font-medium ">Naam</label>
-                <input type="text" name="name" value="{{ old:name }}" class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+                <input type="text" name="name" value="{{ old:name }}" class="block p-3 w-full text-sm rounded-lg bg-white shadow-sm">
             </div>
             <div>
                 <label for="email" class="block mb-2 text-sm font-medium">e-mail</label>
-                <input type="email" name="e_mail" value="{{ old:e_mail }}" class="block p-3 w-full text-sm rounded-lg border shadow-sm">
+                <input type="email" name="e_mail" value="{{ old:e_mail }}" class="block p-3 w-full text-sm rounded-lg bg-white shadow-sm">
             </div>
             <div class="sm:col-span-2">
                 <label for="note" class="block mb-2 text-sm font-medium ">Jouw bericht</label>
-                <textarea name="note" rows="6" class="block p-2.5 w-full text-sm rounded-lg border shadow-sm" placeholder="Bericht">{{ old:note }}</textarea>
+                <textarea name="note" rows="6" class="block p-2.5 w-full block text-sm rounded-lg bg-white shadow-sm" placeholder="Bericht">{{ old:note }}</textarea>
              </div>
             <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-          <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg border shadow-sm sm:w-fit bg-white hover:bg-green-200 ">Versturen</button>
+          <button type="submit" class="py-3 px-5 block p-3 w-full text-sm rounded-lg bg-white shadow-sm sm:w-fit bg-white hover:bg-green-200">Versturen</button>
       {{ /form:contact }}
   </div>
 </section>
