@@ -1,21 +1,23 @@
-<div class="container min-h-dvh max-w-sm md:max-w-xl xl:max-w-4xl mx-auto py-12 px-4">
+<div class="container min-h-dvh mx-auto py-12 px-4">
+  <div class="max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto py-12 px-4">
 
-  <!-- Title -->
-  <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
-    {{ title }}
-  </h1>
+    <!-- Title -->
+    <h1 class="text-4xl font-extrabold text-center text-orange-600 mb-10">
+      {{ title }}
+    </h1>
 
-  <!-- Header -->
-  <div class="bg-gray-50 border-l-4 border-orange-500 pl-6 pr-4 py-4 mb-12 shadow-sm rounded-md">
+    <!-- Header -->
+    <div class="bg-gray-50 border-l-4 border-orange-500 pl-6 pr-4 py-4 mb-12 shadow-sm rounded-md">
       {{ header }}
+    </div>
+
+    {{ if video_field | is_embeddable }}
+    <!-- Youtube and Vimeo -->
+    <iframe src="{{ video_field | embed_url }}" class="w-full aspect-video"></iframe>
+    {{ else }}
+    <!-- Other HTML5 video types -->
+    <video src="{{ video_field | embed_url }}" class="w-full aspect-video"></video>
+    {{ /if }}
+
   </div>
-
-  {{ if video_field | is_embeddable }}
-      <!-- Youtube and Vimeo -->
-      <iframe src="{{ video_field | embed_url }}" class="w-full aspect-video"></iframe>
-  {{ else }}
-      <!-- Other HTML5 video types -->
-      <video src="{{ video_field | embed_url }}" class="w-full aspect-video"></video>
-  {{ /if }}
-
 </div>

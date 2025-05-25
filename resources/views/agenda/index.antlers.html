@@ -11,9 +11,12 @@
             {{ header }}
         </div>
 
-        <section class="mb-10 mt-12 place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {{ partial:partials/agendaitems }}
-        </section>
+        <!-- Agendaitems -->
+        <div class="max-w-4xl mx-auto">
+            <section class="mb-10 mt-12 place-items-center grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+                {{ partial:partials/agendaitems }}
+            </section>
+        </div>
 
     </div>
 </div>
