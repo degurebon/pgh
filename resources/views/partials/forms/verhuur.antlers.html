@@ -38,9 +38,9 @@
             {{ /if }}
 
             {{ if type == "textarea"}}
-                    <div>
+                    <div class="sm:col-span-2">
                         <label for={{ handle }} class="block mb-2 text-sm font-medium ">{{ display }}</label>
-                        <input name={{ handle }} class="block p-3 w-full border-none text-sm rounded-lg bg-white shadow-sm" value="{{ input }}">
+                        <textarea name={{ handle }} rows="6" class="block p-3 w-full border-none text-sm rounded-lg bg-white shadow-sm" value="{{ input }}"></textarea>
                         {{ if error }}
                             <p class="text-red-700">{{ error }}</p>
                         {{ /if }}
